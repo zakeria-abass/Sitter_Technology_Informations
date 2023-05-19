@@ -1,0 +1,85 @@
+
+
+.login-box {
+
+    position: absolute;
+    margin-top: 300px;
+    left: 50%;
+    width: 550px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(249, 249, 249);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    color: rgb(13, 54, 116);
+
+}
+
+@media screen and (max-width: 676px) {
+
+    body{
+        background: white;
+
+    }
+    .login-box {
+        background:linear-gradient(360deg,#f2f3f4c3, #3272b1c3),url(Photon-50s-3000px.png);
+        background-size:  cover;
+
+    }
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(13, 54, 116);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(13, 54, 116);
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(13, 54, 116);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: rgb(13, 54, 116);
+    font-size: 12px;
+}
+
+.login-box form .Submit {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(13, 54, 116);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(13, 54, 116, 0.735),
+    0 0 25px rgba(13, 54, 116, 0.735),
+    0 0 50px rgba(13, 54, 116, 0.735),
+    0 0 100px rgba(13, 54, 116, 0.735);
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+}
+
